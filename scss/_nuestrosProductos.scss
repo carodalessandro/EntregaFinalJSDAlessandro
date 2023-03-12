@@ -1,0 +1,28 @@
+@import "variables";
+
+
+.tamañoImagenesMensaje{
+    width: 30rem; 
+    margin-bottom: 1rem;
+    padding: 2rem 2rem 2rem 2rem; 
+    border-style: $bordeBoton; 
+    line-height: 2rem;
+    display: flex;
+    justify-items: stretch;
+}
+
+@media(min-width:768px){
+
+    .tamañocarrousel{
+            width: 50%;
+    }
+}
+
+@media(min-width:1024px){
+
+    .tamañocarrousel{
+            width: 33%;
+           
+    }
+
+}

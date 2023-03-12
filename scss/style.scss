@@ -1,0 +1,162 @@
+@import "header";
+@import "footer";
+@import "index";
+@import "quienesSomos";
+@import "escribinos";
+@import "nuestrosProductos";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1370px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tamañoLogos {
+  width: 3%;
+}
+
+table {
+  padding: 0rem 0rem 0rem 0rem;
+  border: auto;
+  height: 10rem;
+  width: 20rem;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  background-position: center;
+  background-size: cover;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2 {
+      margin: 1rem 1rem 1rem 1rem;
+      text-align: center;
+      font-size: 2rem;
+      opacity: none;
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+  }
+}
+
+.btn {
+  background-color: white;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 3px 3px 3px 3px;
+  color: $colorBlack;
+  margin-bottom: 3px;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+  border-radius: 0rem;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 190%;
+    background-color: $hoverBoton;
+    z-index: -1;
+    transition: all 0.7s;
+  }
+  &:hover:before {
+    height: 190%;
+  }
+
+  &:hover {
+    color: none;
+  }
+}
+
+.btnCarrito {
+  background-color: white;
+  position: relative;
+  font-size: 1rem;
+  padding: 1px 1px 1px 1px;
+  color: $colorBlack;
+  margin-bottom: 1px;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+  border-radius: 0rem;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 190%;
+    background-color: $hoverBoton;
+    z-index: -1;
+    transition: all 0.7s;
+  }
+  &:hover:before {
+    height: 190%;
+  }
+
+  &:hover {
+    color: none;
+  }
+}
+
+.borde {
+  background-color: $colorGrey;
+}
+
+.backgrounds {
+  width: 100%;
+  background-color: $colorGrey;
+  margin-bottom: 2rem;
+  text-align: center;
+  animation-name: text;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.marginPedidos {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.7rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    margin-top: 1rem;
+  }
+}

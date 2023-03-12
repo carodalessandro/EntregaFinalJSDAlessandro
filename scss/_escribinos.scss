@@ -1,0 +1,47 @@
+@import "variables";
+
+fieldset {
+    background-color: none;
+    background-position: center;
+    background-repeat: repeat-y; 
+    border-color: $hoverBoton;
+    text-transform: uppercase; 
+    font-size: 1.3rem;
+    text-align: center; 
+    line-height: 1.9rem;
+    align-items: center;
+    border-radius: 0rem;
+    display: grid;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+    padding: 2rem 2rem 2rem 2rem; 
+
+
+    input{
+        margin-bottom: .5rem;
+        font-size:large;
+        border-color: $colorFuchsia;
+        opacity: 0.5;
+        line-height: 2.5rem;
+    }
+
+    
+    textarea{
+        margin-top: .5rem;
+        opacity: 0.5;
+        text-emphasis-color: black;
+    }
+}
+
+.mensaje{
+    height: 10rem;
+    width: 15rem;
+}
+
+@media(min-width:768px){
+
+    .mensaje{
+        height: 20rem;
+        width: 30rem;
+    }
+    }

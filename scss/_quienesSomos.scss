@@ -1,0 +1,37 @@
+@import "variables";
+
+.BoxQS{
+        width: 100%;
+        text-align: center;
+        background-color: $fondoBoxRosa;
+        align-content: stretch;
+        padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
+        margin: 0rem 0rem 2rem 0rem; 
+    
+        .cajaTitulos{
+            margin: 1rem 1rem 1rem 1rem; 
+            text-align: center; 
+            font-size: 2rem;
+            animation: fadeIn;
+            animation-duration: 2s;
+        }
+
+        .imgQS{
+                width: 20rem;
+                margin: 5rem 0rem 5rem 0rem;
+        }
+
+        .cajaTexto{
+                font-size: 1.3rem;
+                width: 70%;
+                margin: 2rem 1rem 1rem 1rem;
+                opacity: none;
+        }
+
+}
+
+
+
+
+
+

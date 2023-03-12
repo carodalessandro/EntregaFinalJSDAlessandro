@@ -1,0 +1,97 @@
+@import "variables";
+
+footer{ 
+    margin: 2rem auto 0rem auto;
+    padding: 0rem 0rem 0rem 0rem;
+    background-color: $colorBlack; 
+    position: relative;
+    bottom: 0rem;
+    top: 0rem;
+    width: 100%;       
+}
+
+.fontFrases--white{
+    font-family: "Caveat"; 
+    text-align: center; 
+    font-size: large; 
+    margin: 1rem 1rem 1rem 1rem ; 
+    color: white;
+}
+
+.footerGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contactanos seguinos arriba"
+    "whatsapp redes .";
+    grid-column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.contactanos{
+    display: grid;
+    grid-area: "contactanos";
+     grid-column: 1;
+}
+
+.seguinos{
+    display: grid;
+    grid-area: "seguinos";
+    grid-column: 2;
+}
+
+.arriba{
+    display: grid;
+    grid-area: "arriba";
+     grid-column: 3;
+
+}
+
+.footer-letters{
+    color: white; 
+    list-style: none; 
+    padding: 0px 0;
+    width: 100%;
+    margin:auto;
+
+}
+
+.redesSociales{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.footerInstagram{
+    width: 2.2rem;
+}
+
+.footerFacebook{ 
+    width: 2rem;
+}
+
+.footerWhatsapp{
+    width: 2rem;
+    grid-column: 1;
+    grid-row: 2; 
+}
+
+.footerSubir{
+    color:white;
+    text-transform:uppercase;
+    text-decoration: none;
+    text-align: justify;
+    }
+
+    @media(min-width:768px){
+        .fontFrases--white{
+                font-size: 1.4rem; 
+                
+        }
+    
+        .footer-letters{
+                font-size: 1.1rem;
+    
+        }
+    }

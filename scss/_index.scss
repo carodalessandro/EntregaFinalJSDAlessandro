@@ -1,0 +1,142 @@
+@import "variables";
+
+.tortasIndexStyle{
+    height: 40rem;
+    width: 30rem;  
+    background: white; 
+    border-style: $bordeBoton; 
+    border-color: white;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@mixin imgIndex{
+        height: 20rem;
+        width: 24rem;
+        margin: 1rem 0rem 1rem 0rem;
+        border-style: $bordeBoton; 
+        border-color: white;
+        background-repeat: round;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+.imgIndexRight{
+    @include imgIndex;
+    background-image: url(../img/minicake2.jpg); 
+}
+
+.imgIndexLeft{
+    @include imgIndex;
+    background-image: url(../img/Box1.jpg); 
+}
+
+.backgroundIndex{
+    width: 20%;
+}
+
+.backgroundsIndex2{
+    background-color: $fondoBoxRosa;
+    align-content: stretch;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    margin: 0rem 0rem 2rem 0rem; 
+
+    .cajaTitulos{
+        margin: 1rem 1rem 1rem 1rem; 
+        text-align: center; 
+        font-size: 2rem;
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
+
+}
+
+.cajaIndex{
+    background-color: $colorGrey;
+    height: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: justify;
+
+}
+
+@media(min-width:768px){
+
+    @mixin imgIndex{
+        height: 30rem;
+        width: 36rem;
+    }
+
+    .imgIndexRight{
+        @include imgIndex;
+    }
+
+    .imgIndexLeft{
+        @include imgIndex;
+    }
+
+    .tortasIndexStyle{
+        height: 25rem;
+        width: 20rem;  
+    }
+
+    .backgroundsIndex2{
+        height: 25rem;
+        width: 13rem;  
+    
+        .cajaTitulos{
+            font-size: 1.5rem;
+        }
+    } 
+
+}    
+
+@media(min-width:1024px){
+
+    @mixin imgIndex{
+        height: 32.5rem;
+        width: 38.1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .imgIndexRight{
+        @include imgIndex;
+        margin-left: 2rem;
+    }
+
+    .imgIndexLeft{
+        @include imgIndex;
+    }
+
+    .tortasIndexStyle{
+        margin-top: 1rem;
+        height: 32rem;
+        width: 22rem;  
+    }
+
+    .backgroundsIndex2{
+        margin-top: 1rem;
+        height: 32rem;
+        width: 17rem;    
+
+        .cajaTitulos{
+            font-size: 1.8rem;
+        }
+
+        .cajaTexto{
+            font-size: 1.7rem;
+        }
+
+    }
+
+    .cajaIndex{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    
+    }
+
+}

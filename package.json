@@ -1,0 +1,20 @@
+{
+  "name": "preentrega3-carolinadalessandro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carodalessandro/PreEntrega2-CarolinaDlessandro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carodalessandro/PreEntrega2-CarolinaDlessandro/issues"
+  },
+  "homepage": "https://github.com/carodalessandro/PreEntrega2-CarolinaDlessandro#readme"
+}

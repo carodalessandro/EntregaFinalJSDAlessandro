@@ -1,0 +1,528 @@
+@charset "UTF-8";
+header {
+  margin: auto;
+  padding: auto;
+  background-color: black;
+  position: sticky;
+  display: flex;
+  top: 0px;
+  flex-direction: row;
+  z-index: 1;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.logoEmpresa {
+  width: 10rem;
+  top: 0px;
+  display: grid;
+  grid-area: "logoEmpresa";
+}
+
+.nav_link {
+  display: grid;
+  text-transform: uppercase;
+  text-decoration: solid;
+}
+
+.active {
+  color: fuchsia !important;
+  font-weight: 350;
+  transition: height 2s;
+  transition: width 1s;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logoEmpresa list";
+    list-style: none;
+    padding: 0px 0;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    top: 0rem;
+    justify-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .nav_link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .nav_link {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: justify;
+  }
+  .nav_link :hover {
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .nav {
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .nav_link {
+    flex-wrap: nowrap;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+footer {
+  margin: 2rem auto 0rem auto;
+  padding: 0rem 0rem 0rem 0rem;
+  background-color: black;
+  position: relative;
+  bottom: 0rem;
+  top: 0rem;
+  width: 100%;
+}
+
+.fontFrases--white {
+  font-family: "Caveat";
+  text-align: center;
+  font-size: large;
+  margin: 1rem 1rem 1rem 1rem;
+  color: white;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "contactanos seguinos arriba" "whatsapp redes .";
+  grid-column-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.contactanos {
+  display: grid;
+  grid-area: "contactanos";
+  grid-column: 1;
+}
+
+.seguinos {
+  display: grid;
+  grid-area: "seguinos";
+  grid-column: 2;
+}
+
+.arriba {
+  display: grid;
+  grid-area: "arriba";
+  grid-column: 3;
+}
+
+.footer-letters {
+  color: white;
+  list-style: none;
+  padding: 0px 0;
+  width: 100%;
+  margin: auto;
+}
+
+.redesSociales {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.footerInstagram {
+  width: 2.2rem;
+}
+
+.footerFacebook {
+  width: 2rem;
+}
+
+.footerWhatsapp {
+  width: 2rem;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.footerSubir {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .fontFrases--white {
+    font-size: 1.4rem;
+  }
+  .footer-letters {
+    font-size: 1.1rem;
+  }
+}
+.tortasIndexStyle {
+  height: 40rem;
+  width: 30rem;
+  background: white;
+  border-style: groove;
+  border-color: white;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.imgIndexRight {
+  height: 20rem;
+  width: 24rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-style: groove;
+  border-color: white;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../img/minicake2.jpg);
+}
+
+.imgIndexLeft {
+  height: 20rem;
+  width: 24rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-style: groove;
+  border-color: white;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../img/Box1.jpg);
+}
+
+.backgroundIndex {
+  width: 20%;
+}
+
+.backgroundsIndex2 {
+  background-color: rgb(255, 227, 231);
+  align-content: stretch;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+.backgroundsIndex2 .cajaTitulos {
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.cajaIndex {
+  background-color: lightgrey;
+  height: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: justify;
+}
+
+@media (min-width: 768px) {
+  .imgIndexRight {
+    height: 30rem;
+    width: 36rem;
+  }
+  .imgIndexLeft {
+    height: 30rem;
+    width: 36rem;
+  }
+  .tortasIndexStyle {
+    height: 25rem;
+    width: 20rem;
+  }
+  .backgroundsIndex2 {
+    height: 25rem;
+    width: 13rem;
+  }
+  .backgroundsIndex2 .cajaTitulos {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .imgIndexRight {
+    height: 32.5rem;
+    width: 38.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .imgIndexLeft {
+    height: 32.5rem;
+    width: 38.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .tortasIndexStyle {
+    margin-top: 1rem;
+    height: 32rem;
+    width: 22rem;
+  }
+  .backgroundsIndex2 {
+    margin-top: 1rem;
+    height: 32rem;
+    width: 17rem;
+  }
+  .backgroundsIndex2 .cajaTitulos {
+    font-size: 1.8rem;
+  }
+  .backgroundsIndex2 .cajaTexto {
+    font-size: 1.7rem;
+  }
+  .cajaIndex {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+  }
+}
+.BoxQS {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(255, 227, 231);
+  align-content: stretch;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+.BoxQS .cajaTitulos {
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+.BoxQS .imgQS {
+  width: 20rem;
+  margin: 5rem 0rem 5rem 0rem;
+}
+.BoxQS .cajaTexto {
+  font-size: 1.3rem;
+  width: 70%;
+  margin: 2rem 1rem 1rem 1rem;
+  opacity: none;
+}
+
+fieldset {
+  background-color: none;
+  background-position: center;
+  background-repeat: repeat-y;
+  border-color: fuchsia;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.9rem;
+  align-items: center;
+  border-radius: 0rem;
+  display: grid;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+fieldset input {
+  margin-bottom: 0.5rem;
+  font-size: large;
+  border-color: fuchsia;
+  opacity: 0.5;
+  line-height: 2.5rem;
+}
+fieldset textarea {
+  margin-top: 0.5rem;
+  opacity: 0.5;
+  text-emphasis-color: black;
+}
+
+.mensaje {
+  height: 10rem;
+  width: 15rem;
+}
+
+@media (min-width: 768px) {
+  .mensaje {
+    height: 20rem;
+    width: 30rem;
+  }
+}
+.tamañoImagenesMensaje {
+  width: 30rem;
+  margin-bottom: 1rem;
+  padding: 2rem 2rem 2rem 2rem;
+  border-style: groove;
+  line-height: 2rem;
+  display: flex;
+  justify-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .tamañocarrousel {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .tamañocarrousel {
+    width: 33%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1370px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tamañoLogos {
+  width: 3%;
+}
+
+table {
+  padding: 0rem 0rem 0rem 0rem;
+  border: auto;
+  height: 10rem;
+  width: 20rem;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  background-position: center;
+  background-size: cover;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body section h1,
+body section h2 {
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  opacity: none;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.btn {
+  background-color: white;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 3px 3px 3px 3px;
+  color: black;
+  margin-bottom: 3px;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+  border-radius: 0rem;
+}
+.btn:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 190%;
+  background-color: fuchsia;
+  z-index: -1;
+  transition: all 0.7s;
+}
+.btn:hover:before {
+  height: 190%;
+}
+.btn:hover {
+  color: none;
+}
+
+.btnCarrito {
+  background-color: white;
+  position: relative;
+  font-size: 1rem;
+  padding: 1px 1px 1px 1px;
+  color: black;
+  margin-bottom: 1px;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+  border-radius: 0rem;
+}
+.btnCarrito:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 190%;
+  background-color: fuchsia;
+  z-index: -1;
+  transition: all 0.7s;
+}
+.btnCarrito:hover:before {
+  height: 190%;
+}
+.btnCarrito:hover {
+  color: none;
+}
+
+.borde {
+  background-color: lightgrey;
+}
+
+.backgrounds {
+  width: 100%;
+  background-color: lightgrey;
+  margin-bottom: 2rem;
+  text-align: center;
+  animation-name: text;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.marginPedidos {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.7rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    margin-top: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

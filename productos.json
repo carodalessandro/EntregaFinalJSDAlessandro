@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "tipo": "Box",
+    "descripcion": "Tres minicakes a elección, acompañadas de alfajores y bombones surtidos.",
+    "precio": 4000,
+    "img": "../img/box2.jpg"
+  },
+  {
+    "id": 1,
+    "tipo": "Brownie",
+    "descripcion": "Tarta Brownie de chocolate con toppings de crema y dulce de leche. Decorada con frutos rojos.",
+    "precio": 3000,
+    "img": "../img/minicake1.jpg"
+  },
+  {
+    "id": 2,
+    "tipo": "Cupcakes",
+    "descripcion": "Cupcakes de vainilla, con topping a elección, decorados con frutas de estación.",
+    "precio": 500,
+    "img": "../img/cupcakes1.jpg"
+  },
+  {
+    "id": 3,
+    "tipo": "Mini Red Velvet",
+    "descripcion": "Bizcochuelo aterciopelado relleno con un glaseado de queso con toques de naranja.",
+    "precio": 1500,
+    "img": "../img/minicake2.jpg"
+  }
+]
