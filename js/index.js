@@ -102,7 +102,7 @@ function eliminarDelCarrito(id) {
     carrito.splice(index, 1);
   }
 
-  swal({
+  swal.fire({
     text: "El producto fue eliminado con éxito",
     icon: "success",
   });
