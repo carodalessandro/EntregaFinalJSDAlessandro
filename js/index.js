@@ -82,7 +82,7 @@ function agregarAlCarrito(producto) {
     let mercaderia = new Mercaderia(producto);
     mercaderia.cantidad = 1;
     carrito.push(mercaderia);
-    swal({
+    swal.fire({
       text: "El producto fue agregado con éxito",
       icon: "success",
     });
@@ -187,10 +187,25 @@ function chequearCarritoEnStorage() {
   return [];
 }
 
+function IDCompra(length) {
+  let chars =
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz".split("");
+
+  if (!length) {
+    length = Math.floor(Math.random() * chars.length);
+  }
+
+  let str = "";
+  for (let i = 0; i < length; i++) {
+    str += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return str;
+}
+
 function finalizarCompra() {
   let finalizar = document.getElementById("finalizarCompra");
   finalizar.innerHTML = `<div id="finalizarCompra" class="container d-flex justify-content-center mb-4 mt-3">
-                <button type="button" class="btn d-flex justify-content-center borde">Finalizar compra</button>
+                <button type="button" class="boton d-flex justify-content-center borde">Finalizar compra</button>
                 </div>
         
           
@@ -198,7 +213,7 @@ function finalizarCompra() {
 
   finalizar.onclick = () => {
     if (carrito.length == 0) {
-      swal({
+      swal.fire({
         text: "No ha agregado ningún producto al carrito",
         icon: "error",
       });
@@ -207,13 +222,17 @@ function finalizarCompra() {
       localStorage.clear(),
         (document.getElementById("tablaCarrito").innerHTML = ""),
         (document.getElementById("accionesCarrito").innerHTML = "");
-      swal({
-        text: "Gracias por su compra",
+      swal.fire({
         icon: "success",
+        title: "Su Id de compra es: " + IDCompra(8),
+        showConfirmButton: false,
+        html: `<a class="btn btn-outline-success btn-lg" href="../index.html" role="button">
+        Volver al inicio </a>`,
       });
     }
   };
 }
+
 finalizarCompra();
 
 let carrito = chequearCarritoEnStorage();

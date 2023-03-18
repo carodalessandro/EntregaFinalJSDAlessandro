@@ -429,7 +429,7 @@ body section h2 {
   animation-duration: 2s;
 }
 
-.btn {
+.boton {
   background-color: white;
   position: relative;
   font-size: 1.5rem;
@@ -441,7 +441,7 @@ body section h2 {
   transition: all 0.7s;
   border-radius: 0rem;
 }
-.btn:before {
+.boton:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -452,10 +452,10 @@ body section h2 {
   z-index: -1;
   transition: all 0.7s;
 }
-.btn:hover:before {
+.boton:hover:before {
   height: 190%;
 }
-.btn:hover {
+.boton:hover {
   color: none;
 }
 
@@ -518,7 +518,7 @@ body section h2 {
   }
 }
 @media (min-width: 1024px) {
-  .btn {
+  .boton {
     font-size: 1.7rem;
     padding: 0.6rem 0.6rem 0.6rem 0.6rem;
     margin-top: 1rem;
