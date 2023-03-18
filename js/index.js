@@ -222,13 +222,19 @@ function finalizarCompra() {
       localStorage.clear(),
         (document.getElementById("tablaCarrito").innerHTML = ""),
         (document.getElementById("accionesCarrito").innerHTML = "");
-      swal.fire({
-        icon: "success",
-        title: "Su Id de compra es: " + IDCompra(8),
-        showConfirmButton: false,
-        html: `<a class="btn btn-outline-success btn-lg" href="../index.html" role="button">
+      swal
+        .fire({
+          icon: "success",
+          text: "Su Id de compra es: " + IDCompra(8),
+        })
+        .then(() => {
+          swal.fire({
+            title: "Muchas gracias por su compra",
+            showConfirmButton: false,
+            html: `<a class="btn btn-outline-success btn-lg" href="../index.html" role="button">
         Volver al inicio </a>`,
-      });
+          });
+        });
     }
   };
 }
