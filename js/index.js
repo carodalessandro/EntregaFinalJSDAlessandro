@@ -24,7 +24,7 @@ function imprimirProductosEnHTML() {
   let contenedorCard = document.getElementById("contenedorCard");
   contenedorCard.innerHTML = "";
 
-  fetch("/productos.json")
+  fetch("../productos.json")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((mercaderia) => {
